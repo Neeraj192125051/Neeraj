@@ -1,0 +1,8 @@
+tasklist
+wmic process where "SessionId=0" get Name, ProcessId 
+taskkill /F /PID (num) 
+
+netsh wlan show profiles
+netsh wlan show profile name=" " key=clear
+
+wevtutil qe Security /q:"*[System[(EventID=4624)]]" /rd:true /c:10 /f:text
